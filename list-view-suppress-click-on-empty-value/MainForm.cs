@@ -11,6 +11,8 @@ namespace list_view_with_empty_values
         public MainForm()
         {
             InitializeComponent();
+            listView.FullRowSelect = true;
+            listView.GridLines = true;
             listView.View = View.Details;
             listView.Columns.Add("Name");
             listView.Columns.Add("Light", 80);
